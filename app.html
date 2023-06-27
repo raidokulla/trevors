@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trevori programm</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <style>
+      body {
+        background-color: beige;
+      }
+      .one {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .two {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; 
+      }
+      button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid black;
+        background-color: white;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="two">
+        <button type="button" onclick="action('subtract')">-</button>
+        <h1 id="target">0</h1>
+        <button type="button" onclick="action('add')">+</button>
+      </div>
+    </div>  
+  </body>
+  <script src="script.js"></script>
+</html>
